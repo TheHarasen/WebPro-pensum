@@ -23,7 +23,7 @@ function initPuzzle() {
       tile.classList.add('empty'); // last tile is the empty space
     } else {
       const name = getTileName(tileIndex);
-      tile.style.backgroundImage = `url('pieces/${name}.jpg')`;
+      tile.style.backgroundImage = `url('Pieces/${name}.jpg')`;
     }
 
     tile.dataset.index = i;
