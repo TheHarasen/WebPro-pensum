@@ -1,9 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script defer src="code.js"></script>
+  <meta charset="UTF-8">
+  <title>Footnotes Example</title>
+  <script src="code.js" defer></script>
 </head>
 <body>
-    
+  <h1>Footnotes Example</h1>
+
+  <p>
+    This is a sample text with a footnote reference.
+    <textarea data-footnote="">
+      This is the first footnote.
+    </textarea>
+  </p>
+
+  <p>
+    Another sentence with a second footnote.
+    <textarea data-footnote="">
+      This is the second footnote.
+    </textarea>
+  </p>
+
+  <div id="footnote-popup"></div>
 </body>
 </html>
