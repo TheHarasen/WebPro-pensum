@@ -3,7 +3,14 @@
 console.log('Hello World!');
 
 //Links
-$(document).ready(function(){
+$("#Links li").each(function () {
+    var text = $(this).text();
+    if (text.startsWith("http://") || text.startsWith("https://")) {
+        $(this).html('<a href="' + text + '">' + text + '</a>');
+    }
+});
+
+/*$(document).ready(function(){
     $("ul li").each(function() {
         $(this).hide(0);
         const text = $(this).text().trim();
@@ -13,7 +20,8 @@ $(document).ready(function(){
         }
         $(this).show(300);
     })
-})
+})*/
+
 
 
 //Inputfields
